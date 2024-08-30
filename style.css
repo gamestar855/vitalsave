@@ -1,0 +1,118 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .Progreso {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #eee;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .Progreso::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+  }
+  
+  .Progreso::after {
+    content: '2/3';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-date {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .Datos {
+    background-color: #f05050;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #ddd;
+  }
+  
+  .button-icon {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .button-icon:hover {
+    color: #666;
+  }
